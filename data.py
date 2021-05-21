@@ -2,15 +2,15 @@ from database import*
 
 
 menu= """Please select one of the following Options :
-1) Add new entry.
-2) View Entries
-3) exit
+1) Add new Note .
+2) View Notes .
+3) Exit .
 
 Your Selection """
 
 def new_entry():
-    entry_note = input(" What you have learnt today ?")
-    entry_date = input("Enter the date ")
+    entry_note = input(" What you have learnt today ? - ")
+    entry_date = input("Enter the date - ")
     add_entry(entry_note, entry_date)
 
 def view_entries(entries):
